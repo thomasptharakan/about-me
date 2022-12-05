@@ -1,0 +1,75 @@
+:root{
+  --main-font-color: aquamarine;
+  --header-background-color:rgb(82, 80, 80);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+p {
+  font-size: 16px;
+}
+
+.header{
+  padding: 20px 20px 20px 0px ;
+  font-family:  Arial, sans-serif;
+  background-color: var(--header-background-color);
+  color:var(--main-font-color);
+}
+
+.header h1{
+  display: inline-block;
+  background-color: aquamarine;
+  font-size: 48px;
+  color: black;
+  padding-left: 60px;
+  
+}
+
+.header nav{
+  float: right;
+  font-size: 20px;
+  padding:15px;
+  background-color: var(--header-background-color)
+}
+
+.header nav a{
+  color: var(--main-font-color);
+  padding: 0px 10px 0px 10px;
+  margin-right: 15px;
+  border-color: var(--main-font-color);
+  border-bottom-style: solid;
+  
+}
+
+.hero-banner{
+  background-image: url(../images/02-hero-bg.jpg);
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  text-align: right;
+}
+
+.hero-banner h2{
+  display: inline-block;
+  padding: 10px 40px 10px 10px ;
+  background-color: aquamarine;
+}
+
+
+#avatar img {
+  height: 250px;
+  border-radius: 20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: aquamarine;
+  margin: 10px 40px 0px;
+  
+}
+
