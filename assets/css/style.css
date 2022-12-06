@@ -38,12 +38,11 @@ p {
 .header nav {
   float: right;
   font-family: var(--page-font);
-  font-size: 20px;
   padding: 15px;
-  background-color: var(--header-background-color)
+  background-color: var(--header-background-color);
 }
 
-.header nav a {
+nav a {
   color: var(--header-nav-font-color);
   padding: 0px 10px 0px 10px;
   margin-right: 15px;
@@ -54,10 +53,10 @@ p {
 
 .hero-banner {
   background-image: url(../images/02-hero-bg.jpg);
-  height: 350px;
-  width: 100%;
+  height: auto;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   text-align: right;
 }
 
@@ -65,17 +64,18 @@ p {
   display: inline-block;
   font-family: var(--page-font);
   padding: 10px 40px 10px 10px;
+  margin-bottom: 10px;
   background-color: var(--header-nav-font-color);
 }
 
 
 #avatar img {
-  height: 250px;
-  border-radius: 20px;
+  height: 150px;
+  border-radius: 15px;
   border-width: 5px;
   border-style: solid;
   border-color: var(--header-nav-font-color);
-  margin: 10px 40px 0px;
+  margin: 100px 40px 10px;
 
 }
 
@@ -84,7 +84,6 @@ p {
   display: inline-block;
   color: var(--main-font-color);
   width: 20%;
-  ;
   text-align: right;
   padding: 50px 10px 0px 0px;
   margin: 20px;
@@ -100,21 +99,14 @@ p {
 
 }
 
-#category-content nav {
-  font-family: var(--page-font);
-  font-size: 20px;
-}
-
 
 #category-content nav a {
   color: var(--main-font-color);
-  font-family: var(--page-font);
-  font-size: 20px;
-  padding: 20px;
+  border-color: var(--main-font-color) ;  
 }
 
-#category-content nav a img {
-  height: 30px;
+#linkedIn-img {
+  height: 25px;
 }
 
 #workGrid {
@@ -129,7 +121,7 @@ p {
 
 #mp {
   grid-area: mp;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/02-portfolio-4.jpg);
 }
 
 #companySite {
@@ -139,7 +131,7 @@ p {
 
 #ledWall {
   grid-area: lw;
-  background-image: url(../images/02-portfolio-3.jpg);
+  background-image: url(../images/02-portfolio-1.jpg);
 }
 
 .workGridArea {
@@ -158,4 +150,36 @@ p {
   padding: 20px;
   margin: 30px 0px 30px 0px;
   color: var(--main-font-color);
+}
+
+@media only screen and (max-width: 900px) {
+
+  .header h1{
+    display: block;
+  }
+  .header nav{
+    float: left;
+    width: 100%;
+    text-align: right;
+  }
+  nav a{
+     display: block;
+  }
+
+  
+  #workGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "mp"
+      "cs"
+       "lw"
+    ;
+  }
+
+  #category-title{
+    display: block;
+    text-align: left;
+  }
 }
