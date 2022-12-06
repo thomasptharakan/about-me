@@ -49,14 +49,16 @@ Base code provide by Edx as part of the bootcamp.
 │   ├── css
 │   │   ├── style.css
 │   └── images
-│       ├── brand-awareness.png
-│       ├── cost-management.png
-│       ├── digital-marketing-meeting.png
-│       ├── lead-generation.png
-│       ├── online-reputation-management.png
 │       ├── screen.png
-│       ├── search-engine-optimization.png
-│       └── social-media-marketing.png
+│       ├── linkedin.png
+│       ├── cssCheatSheet.png
+│       ├── Avatar.png
+│       ├── 02-run-buddy.jpg
+│       ├── 02-portfolio-4.jpg
+│       ├── 02-portfolio-3.jpg
+│       ├── 02-portfolio-2.jpg
+│       ├── 02-portfolio-1.jpg
+│       └── 02-hero-bg.jpg
 ├── index.html
 ├── LICENSE
 └── README.md
