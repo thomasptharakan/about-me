@@ -100,7 +100,7 @@ nav a {
 
 }
 
-
+/* override nav colors */
 #category-content nav a {
   color: var(--main-font-color);
   border-color: var(--main-font-color) ;  
@@ -109,7 +109,7 @@ nav a {
 #linkedIn-img {
   height: 25px;
 }
-
+/* Grid controlling */
 #workGrid {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -135,6 +135,7 @@ nav a {
   background-image: url(../images/02-portfolio-1.jpg);
 }
 
+/* Grid Card with border containing project*/
 .workGridArea {
   background-position: center;
   background-size: cover;
@@ -158,9 +159,10 @@ nav a {
   margin: 30px 0px 30px 0px;
   color: var(--main-font-color);
 }
-
+/* Adjust elements for smaller screen size */
 @media only screen and (max-width: 900px) {
 
+  /* Change layout to vertical from horizontal for Menu and contact links */
   .header h1{
     display: block;
   }
@@ -169,11 +171,11 @@ nav a {
     width: 100%;
     text-align: right;
   }
-  nav a{
+    nav a{
      display: block;
   }
 
-  
+  /* Change layout to single colmun  */
   #workGrid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
