@@ -169,7 +169,6 @@ nav a {
   .header nav{
     float: left;
     width: 100%;
-    text-align: right;
   }
     nav a{
      display: block;
