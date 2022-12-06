@@ -1,7 +1,10 @@
-:root{
-  --main-font-color: aquamarine;
-  --header-background-color:rgb(82, 80, 80);
+:root {
+  --main-font-color: rgb(127, 127, 202);
+  --header-nav-font-color: aquamarine;
+  --header-background-color: rgb(82, 80, 80);
+  --page-font: 'Times New Roman';
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -11,43 +14,45 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
+
 p {
   font-size: 16px;
 }
 
-.header{
-  padding: 20px 20px 20px 0px ;
-  font-family:  Arial, sans-serif;
+
+.header {
+  padding: 20px 20px 20px 0px;
   background-color: var(--header-background-color);
-  color:var(--main-font-color);
 }
 
-.header h1{
+.header h1 {
   display: inline-block;
-  background-color: aquamarine;
+  font-family: var(--page-font);
+  background-color: var(--header-nav-font-color);
   font-size: 48px;
   color: black;
   padding-left: 60px;
-  
+
 }
 
-.header nav{
+.header nav {
   float: right;
+  font-family: var(--page-font);
   font-size: 20px;
-  padding:15px;
+  padding: 15px;
   background-color: var(--header-background-color)
 }
 
-.header nav a{
-  color: var(--main-font-color);
+.header nav a {
+  color: var(--header-nav-font-color);
   padding: 0px 10px 0px 10px;
   margin-right: 15px;
-  border-color: var(--main-font-color);
+  border-color: var(--header-nav-font-color);
   border-bottom-style: solid;
-  
+
 }
 
-.hero-banner{
+.hero-banner {
   background-image: url(../images/02-hero-bg.jpg);
   height: 350px;
   width: 100%;
@@ -56,10 +61,11 @@ p {
   text-align: right;
 }
 
-.hero-banner h2{
+.hero-banner h2 {
   display: inline-block;
-  padding: 10px 40px 10px 10px ;
-  background-color: aquamarine;
+  font-family: var(--page-font);
+  padding: 10px 40px 10px 10px;
+  background-color: var(--header-nav-font-color);
 }
 
 
@@ -68,8 +74,88 @@ p {
   border-radius: 20px;
   border-width: 5px;
   border-style: solid;
-  border-color: aquamarine;
+  border-color: var(--header-nav-font-color);
   margin: 10px 40px 0px;
-  
+
 }
 
+
+#category-title {
+  display: inline-block;
+  color: var(--main-font-color);
+  width: 20%;
+  ;
+  text-align: right;
+  padding: 50px 10px 0px 0px;
+  margin: 20px;
+
+}
+
+#category-content {
+  width: 70%;
+  display: inline-block;
+  border-color: var(--main-font-color);
+  padding-left: 20px;
+  border-left-style: solid;
+
+}
+
+#category-content nav {
+  font-family: var(--page-font);
+  font-size: 20px;
+}
+
+
+#category-content nav a {
+  color: var(--main-font-color);
+  font-family: var(--page-font);
+  font-size: 20px;
+  padding: 20px;
+}
+
+#category-content nav a img {
+  height: 30px;
+}
+
+#workGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "mp mp"
+    "cs lw"
+  ;
+}
+
+#mp {
+  grid-area: mp;
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+#companySite {
+  grid-area: cs;
+  background-image: url(../images/02-portfolio-2.jpg);
+}
+
+#ledWall {
+  grid-area: lw;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+
+.workGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  border-width: 5px;
+  border-color: var(--header-nav-font-color);
+  border-style: solid;
+}
+
+.heading {
+  width: 30%;
+  background-color: var(--header-nav-font-color);
+  padding: 20px;
+  margin: 30px 0px 30px 0px;
+  color: var(--main-font-color);
+}

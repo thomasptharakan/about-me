@@ -13,25 +13,26 @@
   <!-- main logo / nav -->
   <div class="header">
     <h1>Thomas Tharakan</h1>
-      <!-- Navigation Elements -->
-      <nav id="navigation">
-        <a href="#">About Me</a>
-        <a href="#work">Work</a>
-        <a href="#">Contact Me</a>
-        <a href="#">Profile</a>
-      </nav>
+    <!-- Navigation Elements -->
+    <nav id="navigation">
+      <a href="#about-me">About Me</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact Me</a>
+      <a href="#profile">Profile</a>
+    </nav>
   </div>
 
   <!-- Avatar, Title and background Image section -->
   <section class="hero-banner">
     <!-- Avatar/Personal image -->
-    
+
     <div id="avatar">
       <img src="./assets/images/Avatar.png"
         alt="Avatar of Thomas Tharakan,a facial image with brown skin cropped hair wearing and aqaumarine v-neck t-shirt">
     </div>
-    <br>
-    <div><h2>Web Developer Padawan</h2></div>  
+    <div>
+      <h2>Web Developer Padawan</h2>
+    </div>
   </section>
 
   <!-- Main Body and categories tiles-->
@@ -39,19 +40,68 @@
     <!-- about me category -->
     <section class="category-card" id="about-me">
       <h2 id="category-title">About Me</h2>
-      <div id="category-content"> This is some text about me</div>
+      <div id="category-content"> I am a software enthusiast curently undergoing training to become a web developer.
+        This website provides an overview of some of key projects that I have worked on as part of my training.
+      </div>
     </section>
 
     <!-- portfolio container -->
     <section class="category-card" id="work">
       <h2 id="category-title">Work</h2>
-      <div id="category-content"> This is some text about me</div>
+      <div id="category-content">
+        <div id="workGrid">
+          <div id="mp" class="workGridArea">
+            <a href=#>
+              <div class="heading">
+                <h3>CSS Cheat Sheet</h3>
+                <h5>HTML/CSS</h5>
+              </div>
+            </a>
+          </div>
+          <div id="companySite" class="workGridArea">
+            <a href="#">
+              <div class="heading">
+                <h3>Company Website</h3>
+                <h5>HTML/CSS</h5>
+              </div>
+            </a>
+          </div>
+          <div id="ledWall" class="workGridArea">
+            <a href="#">
+              <div class="heading">
+                <h3>LED Wall</h3>
+                <h5>Node/IOT</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- contact -->
     <section class="category-card" id="contact">
       <h2 id="category-title">Contact Me</h2>
-      <div id="category-content"> This is some text about me</div>
+      <div id="category-content">
+        <!-- Contact links-->
+        <nav>
+          <a href="tel:555:555:555">555.555.555</a>
+          <a href="mailto:thomastharakan@zendev.com">thomastharakan@zendev.com</a>
+          <a href="https://github.com/thomasptharakan/">GitHub</a>
+          <a href="#">Twitter</a>
+          <a href="#">Spotify</a>
+        </nav>
+      </div>
+    </section>
+    <!--Profile Section-->
+    <section class="category-card" id="profile">
+      <h2 id="category-title">Profile</h2>
+      <div id="category-content">
+        <!-- Contact links-->
+        <nav>
+          <a href="https://www.linkedin.com/in/thomastharakan/"><img src="./assets/images/linkedin.png"
+              alt="Linked in website Icon. The letters I and N in a Blue background"></a>
+        </nav>
+      </div>
     </section>
   </main>
 </body>
