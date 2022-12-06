@@ -1,3 +1,4 @@
+/*Added commonly used variables for color and font */
 :root {
   --main-font-color: rgb(127, 127, 202);
   --header-nav-font-color: aquamarine;
@@ -142,6 +143,12 @@ nav a {
   border-width: 5px;
   border-color: var(--header-nav-font-color);
   border-style: solid;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Focus on Hover */
+.workGridArea:hover{
+  box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
 }
 
 .heading {
