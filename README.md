@@ -4,7 +4,7 @@
 
 This repository ("about-me") contains the code for a static portfolio website. The current website contains a few details about me, my avatar image and links to a few of the projects I have worked on.
 
-The Website is built using html and css and has been optimised with comments and and appropriate use of semantic tags. The site is responsive and has been configured for Desktops (>769px+), tablet(481px-768px) and mobile device(<480px) screens.
+The Website is built using html and css and has been optimised with comments and and appropriate use of semantic tags. The site is responsive and has been configured for Desktops (>=900px+), smaller screens (<900px) screens.
 
 Link to hosted site : https://thomasptharakan.github.io/about-me/
 
